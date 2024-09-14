@@ -1,0 +1,186 @@
+body {
+    background-color: rgb(238, 232, 227);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-shadow: 0 4px #b7d7f8;
+} 
+
+form {
+    max-width: 700px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #7ca3ca;
+    padding: 30px;
+    /* border-top: 5px solid #fd7654; */
+    /* font-size: 18px; */
+}
+
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+label{
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #34495e;
+}
+
+#name,
+#email,
+#Phone,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    border: 2px solid #bdc3c7;
+    box-sizing: border-box;
+    background-color: #ecf0f1;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+}
+
+input:focus,
+textarea:focus {
+    border-color: #b9b6ec;
+    outline: none;
+    box-shadow: 0 0 8px #580852;
+}
+
+
+legend {
+    font-weight: 700;
+    color: #565658;
+    font-size: 1.3rem;
+    display: inline-block; 
+    padding-bottom: 5px; 
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #ffcefd; 
+    width: auto; 
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    background-color: #ecf0f1;
+    border: none;
+    border-radius: 10px;
+    color: #34495e;
+    border: 2px solid #bdc3c7;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+}
+
+button:hover {
+    box-shadow: 0 0 8px #081d58;
+    background-color: #cdcbf1;
+}
+
+#resume-output {
+    max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 2px solid #bcecee;
+  border-radius: 12px;
+  background-color: #ffffff;
+ 
+  color: #2c3e50;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0 10px #1d2e3f;
+
+}
+
+#resume-output h2 {
+    color: #3f3d3d; /* Consistent with form and button color */
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bdc3c7; /* Light grey for a subtle effect */
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Icon for section titles */
+  #resume-output h2::before {
+    content: "✧";
+    color: #888180; /* Consistent with section titles color */
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  #resume-output p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    line-height: 1.8;
+    color: #333; /* Darker color for readability */
+  }
+  
+  /* Styling for list items in resume (e.g., skills, experience) */
+  #resume-output ul {
+    padding-left: 20px;
+  }
+  
+  #resume-output ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  #resume-output ul li::before {
+    content: "•";
+    color: #b4adac; /* Consistent with list item bullets color */
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    #resume-output {
+      padding: 20px;
+    }
+  
+    #resume-output h2 {
+      font-size: 1.6rem;
+    }
+  
+    #resume-output h3 {
+      font-size: 1.2rem;
+    }
+  
+    #resume-output p {
+      font-size: 1rem;
+    }
+  }
